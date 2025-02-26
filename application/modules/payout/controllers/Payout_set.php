@@ -923,7 +923,7 @@ private function send_fcm_notification($student_id, $title, $message) {
 // Fungsi untuk mengirim pesan WhatsApp
 private function send_whatsapp_notification($phone_number, $message) {
   $api_url = "https://tegal.wablas.com/api/v2/send-message";
-  $api_token = "C5ZefdADVrejALPpeCn1rYPZ3OQaKuEszSQgXrpbQXPoKjt2sFzfXWT0jiSbs2Pg.tgw6gVhz";
+  $api_token = "UlfolHDcj6rTYy53D3b6Mkv4bQTOTEPru7ETCErJNUCQO9Xrc6B7OKwxzRlsf3CO.G5qWgvT8";
 
   $postData = [
       "data" => [

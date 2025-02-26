@@ -198,7 +198,8 @@ if (isset($student)) {
 						</div>
 
 						
-						<p class="text-muted">*) Kolom wajib diisi.</p>
+						<p class="text-muted">*) Kolom wajib diisi. <br> Nomor Hp Wajib Diawali 62 Tanpa +
+					</p>
 					</div>
 					<!-- /.box-body -->
 				</div>
@@ -211,12 +212,12 @@ if (isset($student)) {
 							<label>Status</label>
 							<div class="radio">
 								<label>
-									<input type="radio" name="student_status" value="1" <?php echo ($inputStatusValue == 1) ? 'checked' : ''; ?>> Aktif
+								<input type="radio" name="student_status" value="1" <?php echo (isset($student['student_status']) ? ($student['student_status'] == 1 ? 'checked' : '') : 'checked'); ?>> Aktif
 								</label>
 							</div>
 							<div class="radio">
 								<label>
-									<input type="radio" name="student_status" value="0" <?php echo ($inputStatusValue == 0) ? 'checked' : ''; ?>> Tidak Aktif
+								<input type="radio" name="student_status" value="0" <?php echo (isset($student['student_status']) ? ($student['student_status'] == 0 ? 'checked' : '') : ''); ?>> Tidak Aktif
 								</label>
 							</div>
 						</div>
