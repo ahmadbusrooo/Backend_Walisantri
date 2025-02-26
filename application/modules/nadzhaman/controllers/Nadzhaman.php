@@ -15,7 +15,7 @@ class Nadzhaman extends CI_Controller
             'student/Student_model', 
             'kitab/Kitab_model', 
             'period/Period_model', 
-            'nadzhaman/KitabDikelas_model' // Pastikan model ini ada
+            'KitabDikelas_model' // Pastikan model ini ada
         ]);
     }
 

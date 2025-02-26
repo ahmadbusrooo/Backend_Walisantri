@@ -134,7 +134,7 @@ $route['api/payment_history'] = 'flutter_integration/get_payment_history'; // AP
 $route['manage/payment/delete_payment_bulan/(:num)/(:num)'] = 'payment_set/delete_payment_bulan/$1/$2';
 $route['nadzhaman/manage_kitab_class'] = 'nadzhaman/manage_kitab_class';
 $route['nadzhaman/filter_nadzhaman'] = 'nadzhaman/filter_nadzhaman';
-$route['nadzhaman/KitabDikelas_model'] = 'nadzhaman/KitabDikelas_model';
+$route['KitabDikelas_model'] = 'KitabDikelas_model';
 
 $route['komplek/kamar/(:num)'] = 'komplek/kamar_by_komplek/$1';
 $route['komplek/kamar/add/(:num)'] = 'komplek/add_kamar/$1';

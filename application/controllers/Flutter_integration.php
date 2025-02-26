@@ -25,7 +25,7 @@ class Flutter_Integration extends CI_Controller
             'setting/Setting_model',
             'information/Information_model'
         ]);
-        $this->load->model('nadzhaman/KitabDikelas_model');
+        $this->load->model('KitabDikelas_model');
 
 
         $this->load->library('form_validation');
