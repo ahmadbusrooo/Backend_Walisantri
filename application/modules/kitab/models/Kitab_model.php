@@ -30,9 +30,6 @@ class Kitab_model extends CI_Model
         return $this->db->affected_rows();
     }
 
-
-    
-
     public function delete($kitab_id)
     {
         // Periksa apakah kitab sedang digunakan di tabel class_kitab

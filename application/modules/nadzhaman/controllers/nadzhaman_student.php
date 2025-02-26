@@ -12,6 +12,9 @@ class Nadzhaman_student extends CI_Controller
         $this->load->model(['nadzhaman/Nadzhaman_model', 'student/Student_model']);
     }
 
+
+
+    
     public function index()
     {
         // Ambil NIS dari session
