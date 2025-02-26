@@ -3448,3 +3448,262 @@ DEBUG - 2025-02-26 19:29:37 --> File loaded: C:\Users\asus\Documents\xampp\htdoc
 DEBUG - 2025-02-26 19:29:37 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\views\manage/layout.php
 INFO - 2025-02-26 19:29:37 --> Final output sent to browser
 DEBUG - 2025-02-26 19:29:37 --> Total execution time: 0.1509
+INFO - 2025-02-26 19:36:00 --> Config Class Initialized
+INFO - 2025-02-26 19:36:00 --> Hooks Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> UTF-8 Support Enabled
+INFO - 2025-02-26 19:36:00 --> Utf8 Class Initialized
+INFO - 2025-02-26 19:36:00 --> URI Class Initialized
+INFO - 2025-02-26 19:36:00 --> Router Class Initialized
+INFO - 2025-02-26 19:36:00 --> Output Class Initialized
+INFO - 2025-02-26 19:36:00 --> Security Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2025-02-26 19:36:00 --> Input Class Initialized
+INFO - 2025-02-26 19:36:00 --> Language Class Initialized
+INFO - 2025-02-26 19:36:00 --> Language Class Initialized
+INFO - 2025-02-26 19:36:00 --> Config Class Initialized
+INFO - 2025-02-26 19:36:00 --> Loader Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> Config file loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\config/arc.php
+INFO - 2025-02-26 19:36:00 --> Helper loaded: url_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: text_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: inflector_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: form_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: security_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: arc_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: file_helper
+INFO - 2025-02-26 19:36:00 --> Database Driver Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2025-02-26 19:36:00 --> Session: Class initialized using 'files' driver.
+INFO - 2025-02-26 19:36:00 --> Form Validation Class Initialized
+INFO - 2025-02-26 19:36:00 --> Controller Class Initialized
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/users/models/Users_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/holiday/models/Holiday_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/student/models/Student_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/kredit/models/Kredit_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/debit/models/Debit_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bulan/models/Bulan_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/setting/models/Setting_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/information/models/Information_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bebas/models/Bebas_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bebas/models/Bebas_pay_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/class/models/Class_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/ustadz/models/Ustadz_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/pengurus/models/Pengurus_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/nadzhaman/models/Nadzhaman_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/pelanggaran/models/Pelanggaran_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+INFO - 2025-02-26 19:36:00 --> User Agent Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\views\manage/sidebar.php
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/dashboard/views/dashboard.php
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\views\manage/layout.php
+INFO - 2025-02-26 19:36:00 --> Final output sent to browser
+DEBUG - 2025-02-26 19:36:00 --> Total execution time: 0.2318
+INFO - 2025-02-26 19:36:00 --> Config Class Initialized
+INFO - 2025-02-26 19:36:00 --> Hooks Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> UTF-8 Support Enabled
+INFO - 2025-02-26 19:36:00 --> Utf8 Class Initialized
+INFO - 2025-02-26 19:36:00 --> URI Class Initialized
+INFO - 2025-02-26 19:36:00 --> Router Class Initialized
+INFO - 2025-02-26 19:36:00 --> Output Class Initialized
+INFO - 2025-02-26 19:36:00 --> Security Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2025-02-26 19:36:00 --> Input Class Initialized
+INFO - 2025-02-26 19:36:00 --> Language Class Initialized
+INFO - 2025-02-26 19:36:00 --> Language Class Initialized
+INFO - 2025-02-26 19:36:00 --> Config Class Initialized
+INFO - 2025-02-26 19:36:00 --> Loader Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> Config file loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\config/arc.php
+INFO - 2025-02-26 19:36:00 --> Helper loaded: url_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: text_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: inflector_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: form_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: security_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: arc_helper
+INFO - 2025-02-26 19:36:00 --> Helper loaded: file_helper
+INFO - 2025-02-26 19:36:00 --> Database Driver Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2025-02-26 19:36:00 --> Session: Class initialized using 'files' driver.
+INFO - 2025-02-26 19:36:00 --> Form Validation Class Initialized
+INFO - 2025-02-26 19:36:00 --> Controller Class Initialized
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/users/models/Users_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/setting/models/Setting_model.php
+INFO - 2025-02-26 19:36:00 --> Model Class Initialized
+INFO - 2025-02-26 19:36:00 --> Helper loaded: string_helper
+DEBUG - 2025-02-26 19:36:00 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\views\manage/login.php
+INFO - 2025-02-26 19:36:00 --> Final output sent to browser
+DEBUG - 2025-02-26 19:36:00 --> Total execution time: 0.1085
+INFO - 2025-02-26 19:36:06 --> Config Class Initialized
+INFO - 2025-02-26 19:36:06 --> Hooks Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> UTF-8 Support Enabled
+INFO - 2025-02-26 19:36:06 --> Utf8 Class Initialized
+INFO - 2025-02-26 19:36:06 --> URI Class Initialized
+INFO - 2025-02-26 19:36:06 --> Router Class Initialized
+INFO - 2025-02-26 19:36:06 --> Output Class Initialized
+INFO - 2025-02-26 19:36:06 --> Security Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2025-02-26 19:36:06 --> Input Class Initialized
+INFO - 2025-02-26 19:36:06 --> Language Class Initialized
+INFO - 2025-02-26 19:36:06 --> Language Class Initialized
+INFO - 2025-02-26 19:36:06 --> Config Class Initialized
+INFO - 2025-02-26 19:36:06 --> Loader Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> Config file loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\config/arc.php
+INFO - 2025-02-26 19:36:06 --> Helper loaded: url_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: text_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: inflector_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: form_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: security_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: arc_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: file_helper
+INFO - 2025-02-26 19:36:06 --> Database Driver Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2025-02-26 19:36:06 --> Session: Class initialized using 'files' driver.
+INFO - 2025-02-26 19:36:06 --> Form Validation Class Initialized
+INFO - 2025-02-26 19:36:06 --> Controller Class Initialized
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/users/models/Users_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/setting/models/Setting_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+INFO - 2025-02-26 19:36:06 --> Helper loaded: string_helper
+INFO - 2025-02-26 19:36:06 --> Language file loaded: language/indonesia/form_validation_lang.php
+INFO - 2025-02-26 19:36:06 --> Config Class Initialized
+INFO - 2025-02-26 19:36:06 --> Hooks Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> UTF-8 Support Enabled
+INFO - 2025-02-26 19:36:06 --> Utf8 Class Initialized
+INFO - 2025-02-26 19:36:06 --> URI Class Initialized
+INFO - 2025-02-26 19:36:06 --> Router Class Initialized
+INFO - 2025-02-26 19:36:06 --> Output Class Initialized
+INFO - 2025-02-26 19:36:06 --> Security Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2025-02-26 19:36:06 --> Input Class Initialized
+INFO - 2025-02-26 19:36:06 --> Language Class Initialized
+INFO - 2025-02-26 19:36:06 --> Language Class Initialized
+INFO - 2025-02-26 19:36:06 --> Config Class Initialized
+INFO - 2025-02-26 19:36:06 --> Loader Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> Config file loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\config/arc.php
+INFO - 2025-02-26 19:36:06 --> Helper loaded: url_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: text_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: inflector_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: form_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: security_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: arc_helper
+INFO - 2025-02-26 19:36:06 --> Helper loaded: file_helper
+INFO - 2025-02-26 19:36:06 --> Database Driver Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2025-02-26 19:36:06 --> Session: Class initialized using 'files' driver.
+INFO - 2025-02-26 19:36:06 --> Form Validation Class Initialized
+INFO - 2025-02-26 19:36:06 --> Controller Class Initialized
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/users/models/Users_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/holiday/models/Holiday_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/student/models/Student_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/kredit/models/Kredit_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/debit/models/Debit_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bulan/models/Bulan_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/setting/models/Setting_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/information/models/Information_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bebas/models/Bebas_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bebas/models/Bebas_pay_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/class/models/Class_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/ustadz/models/Ustadz_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/pengurus/models/Pengurus_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/nadzhaman/models/Nadzhaman_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/pelanggaran/models/Pelanggaran_model.php
+INFO - 2025-02-26 19:36:06 --> Model Class Initialized
+INFO - 2025-02-26 19:36:06 --> User Agent Class Initialized
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\views\manage/sidebar.php
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/dashboard/views/dashboard.php
+DEBUG - 2025-02-26 19:36:06 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\views\manage/layout.php
+INFO - 2025-02-26 19:36:06 --> Final output sent to browser
+DEBUG - 2025-02-26 19:36:06 --> Total execution time: 0.2283
+INFO - 2025-02-26 19:36:07 --> Config Class Initialized
+INFO - 2025-02-26 19:36:07 --> Hooks Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> UTF-8 Support Enabled
+INFO - 2025-02-26 19:36:07 --> Utf8 Class Initialized
+INFO - 2025-02-26 19:36:07 --> URI Class Initialized
+INFO - 2025-02-26 19:36:07 --> Router Class Initialized
+INFO - 2025-02-26 19:36:07 --> Output Class Initialized
+INFO - 2025-02-26 19:36:07 --> Security Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2025-02-26 19:36:07 --> Input Class Initialized
+INFO - 2025-02-26 19:36:07 --> Language Class Initialized
+INFO - 2025-02-26 19:36:07 --> Language Class Initialized
+INFO - 2025-02-26 19:36:07 --> Config Class Initialized
+INFO - 2025-02-26 19:36:07 --> Loader Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> Config file loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\config/arc.php
+INFO - 2025-02-26 19:36:07 --> Helper loaded: url_helper
+INFO - 2025-02-26 19:36:07 --> Helper loaded: text_helper
+INFO - 2025-02-26 19:36:07 --> Helper loaded: inflector_helper
+INFO - 2025-02-26 19:36:07 --> Helper loaded: form_helper
+INFO - 2025-02-26 19:36:07 --> Helper loaded: security_helper
+INFO - 2025-02-26 19:36:07 --> Helper loaded: arc_helper
+INFO - 2025-02-26 19:36:07 --> Helper loaded: file_helper
+INFO - 2025-02-26 19:36:07 --> Database Driver Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> Session: "sess_save_path" is empty; using "session.save_path" value from php.ini.
+INFO - 2025-02-26 19:36:07 --> Session: Class initialized using 'files' driver.
+INFO - 2025-02-26 19:36:07 --> Form Validation Class Initialized
+INFO - 2025-02-26 19:36:07 --> Controller Class Initialized
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/users/models/Users_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/holiday/models/Holiday_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/student/models/Student_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/kredit/models/Kredit_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/debit/models/Debit_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bulan/models/Bulan_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/setting/models/Setting_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/information/models/Information_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bebas/models/Bebas_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/bebas/models/Bebas_pay_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/class/models/Class_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/ustadz/models/Ustadz_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/pengurus/models/Pengurus_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/nadzhaman/models/Nadzhaman_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+DEBUG - 2025-02-26 19:36:07 --> File loaded: C:\Users\asus\Documents\xampp\htdocs\app-walisantri-backend\application\modules/pelanggaran/models/Pelanggaran_model.php
+INFO - 2025-02-26 19:36:07 --> Model Class Initialized
+INFO - 2025-02-26 19:36:07 --> User Agent Class Initialized
+INFO - 2025-02-26 19:36:07 --> Final output sent to browser
+DEBUG - 2025-02-26 19:36:07 --> Total execution time: 0.2297
