@@ -13,6 +13,9 @@ class Nadzhaman_student extends CI_Controller
     }
 
 
+
+    
+
     public function index()
     {
         // Ambil NIS dari session
