@@ -60,21 +60,28 @@ class Class_model extends CI_Model {
     }
     
     // Mendapatkan data kelas berdasarkan parameter
-    public function get($params = []) {
-        $this->db->select('class.*, ustadz.ustadz_nama AS wali_kelas');
-        $this->db->from('class');
-        $this->db->join('ustadz', 'ustadz.ustadz_id = class.wali_kelas_id', 'left');
+public function get($params = []) {
+    $this->db->select('class.*, ustadz.ustadz_nama AS wali_kelas');
+    $this->db->from('class');
+    $this->db->join('ustadz', 'ustadz.ustadz_id = class.wali_kelas_id', 'left');
 
-        if (!empty($params['class_id'])) {
-            $this->db->where('class.class_id', $params['class_id']);
-        }
-
-        if (!empty($params['wali_kelas_id'])) {
-            $this->db->where('class.wali_kelas_id', $params['wali_kelas_id']);
-        }
-
-        return $this->db->get()->row_array();
+    if (!empty($params['class_id'])) {
+        $this->db->where('class.class_id', $params['class_id']);
     }
+
+    if (!empty($params['wali_kelas_id'])) {
+        $this->db->where('class.wali_kelas_id', $params['wali_kelas_id']);
+    }
+
+    // 🔥 Tambahkan filter berdasarkan student_id jika ada
+    if (!empty($params['student_id'])) {
+        $this->db->join('student', 'student.class_class_id = class.class_id', 'left');
+        $this->db->where('student.student_id', $params['student_id']);
+    }
+
+    return $this->db->get()->row_array();
+}
+
     
 }
 ?>
