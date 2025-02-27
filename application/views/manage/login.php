@@ -124,10 +124,26 @@
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" class="form-control" placeholder="Masukkan password" required>
+          <i class="fa fa-eye toggle-password" onclick="togglePassword()"></i>
         </div>
         <button type="submit" class="btn btn-login">Login</button>
       <?php echo form_close(); ?>
     </div>
   </div>
+  <script>
+    function togglePassword() {
+      var passwordInput = document.getElementById("password");
+      var icon = document.querySelector(".toggle-password");
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        icon.classList.remove("fa-eye");
+        icon.classList.add("fa-eye-slash");
+      } else {
+        passwordInput.type = "password";
+        icon.classList.remove("fa-eye-slash");
+        icon.classList.add("fa-eye");
+      }
+    }
+  </script>
 </body>
 </html>
