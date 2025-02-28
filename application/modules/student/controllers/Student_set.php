@@ -668,14 +668,14 @@ class Student_set extends CI_Controller
     pdf_create($html, 'DATA_SANTRI_' . date('d_m_Y'), TRUE, 'F4', 'landscape');
   }
 
-  public function send_multiple_wa()
-  {
+public function send_multiple_wa()
+{
     $students = $this->input->post('students'); // Ambil daftar ID santri yang dipilih
     $message = $this->input->post('message'); // Ambil pesan yang diketik di modal
 
     if (empty($students) || empty($message)) {
-      echo json_encode(["status" => "error", "message" => "Data tidak lengkap."]);
-      return;
+        echo json_encode(["status" => "error", "message" => "Data tidak lengkap."]);
+        return;
     }
 
     // Load model untuk mendapatkan nomor WhatsApp orang tua
@@ -683,45 +683,54 @@ class Student_set extends CI_Controller
     $recipients = $this->Student_model->get_parents_phones($students);
 
     if (empty($recipients)) {
-      echo json_encode(["status" => "error", "message" => "Tidak ada nomor WA yang ditemukan."]);
-      return;
+        echo json_encode(["status" => "error", "message" => "Tidak ada nomor WA yang ditemukan."]);
+        return;
     }
 
-    // API Wablas
-    $token = "C5ZefdADVrejALPpeCn1rYPZ3OQaKuEszSQgXrpbQXPoKjt2sFzfXWT0jiSbs2Pg"; // Ganti dengan API Key Wablas Anda
-    $secret_key = "tgw6gVhz"; // Ganti dengan Secret Key Wablas Anda
-    $url = "https://tegal.wablas.com/api/v2/send-message";
+    // Ambil API URL dan API Token dari database (lebih aman)
+    $api_url = $this->Setting_model->get_value(['id' => 8]); // Ambil setting_wa_gateway_url
+    $api_token = $this->Setting_model->get_value(['id' => 9]); // Ambil setting_wa_api_key
+
+    if (empty($api_url) || empty($api_token)) {
+        log_message('error', "WhatsApp API credentials tidak ditemukan di database.");
+        echo json_encode(["status" => "error", "message" => "Konfigurasi API WhatsApp tidak tersedia."]);
+        return;
+    }
 
     // Format data sesuai dokumentasi terbaru Wablas
     $payload = [
-      "data" => []
+        "data" => []
     ];
 
     foreach ($recipients as $phone) {
-      $payload["data"][] = [
-        'phone' => $phone,
-        'message' => $message,
-      ];
+        $payload["data"][] = [
+            'phone' => $phone,
+            'message' => $message,
+        ];
     }
 
     // Kirim request ke API Wablas
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_HTTPHEADER, array(
-      "Authorization: $token.$secret_key",
-      "Content-Type: application/json"
+        "Authorization: $api_token",
+        "Content-Type: application/json"
     ));
     curl_setopt($curl, CURLOPT_CUSTOMREQUEST, "POST");
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($payload));
-    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_URL, $api_url);
     curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, 0);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, 0);
 
     $result = curl_exec($curl);
+    $http_code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+    $response = json_decode($result, true);
     curl_close($curl);
 
-    echo json_encode(["status" => "success", "message" => "Pesan berhasil dikirim!", "response" => json_decode($result)]);
-  }
+    // Jika sukses, tampilkan pesan berhasil
+    echo json_encode(["status" => "success", "message" => "Pesan berhasil dikirim!", "response" => $response]);
+}
+
 
 
   // satuan

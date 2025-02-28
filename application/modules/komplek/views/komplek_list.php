@@ -25,14 +25,16 @@
 					<!-- /.box-header -->
 					<div class="box-body table-responsive">
 						<table class="table table-hover">
-							<thead>
-								<tr>
-									<th>No</th>
-									<th>Nama Komplek</th>
-									<th>ID Komplek</th>
-									<th>Aksi</th>
-								</tr>
-							</thead>
+						<thead>
+    <tr>
+        <th>No</th>
+        <th>Nama Komplek</th>
+        <th>ID Komplek</th>
+        <th>Jumlah Kamar</th>
+        <th>Aksi</th>
+    </tr>
+</thead>
+
 							<tbody>
 								<?php
 								if (!empty($komplek)) {
@@ -43,6 +45,7 @@
 											<td><?php echo $i; ?></td>
 											<td><?php echo $row['komplek_name']; ?></td>
 											<td><?php echo $row['komplek_id']; ?></td>
+											<td><?php echo $row['jumlah_kamar']; ?></td>
 											<td>
 											<a href="<?php echo site_url('komplek/kamar/' . $row['komplek_id']) ?>" class="btn btn-xs btn-info" data-toggle="tooltip" title="Lihat Kamar">
         <i class="fa fa-eye"></i>

@@ -83,6 +83,7 @@
         <option value="Kebersihan" <?php echo (isset($pengurus) && $pengurus['pengurus_jabatan'] == 'Kebersihan') ? 'selected' : ''; ?>>Kebersihan</option>
         <option value="Pembangunan" <?php echo (isset($pengurus) && $pengurus['pengurus_jabatan'] == 'Pembangunan') ? 'selected' : ''; ?>>Pembangunan</option>
         <option value="Kesehatan" <?php echo (isset($pengurus) && $pengurus['pengurus_jabatan'] == 'Kesehatan') ? 'selected' : ''; ?>>Kesehatan</option>
+        <option value="Perlengkapan" <?php echo (isset($pengurus) && $pengurus['pengurus_jabatan'] == 'Perlengkapan') ? 'selected' : ''; ?>>Perlengkapan</option>
         <option value="Media" <?php echo (isset($pengurus) && $pengurus['pengurus_jabatan'] == 'Media') ? 'selected' : ''; ?>>Media</option>
     </select>
 </div>

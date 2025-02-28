@@ -51,6 +51,15 @@ class Komplek_model extends CI_Model {
         $this->db->where('majors.komplek_id', $komplek_id);
         return $this->db->get()->result_array();
     }
+    public function get_komplek_with_kamar_count() {
+        $this->db->select('komplek.komplek_id, komplek.komplek_name, COUNT(majors.majors_id) as jumlah_kamar');
+        $this->db->from('komplek');
+        $this->db->join('majors', 'majors.komplek_id = komplek.komplek_id', 'left');
+        $this->db->group_by('komplek.komplek_id');
+        $this->db->order_by('komplek.komplek_name', 'ASC');
+        return $this->db->get()->result_array();
+    }
+    
     
 
     // Menghapus komplek berdasarkan ID

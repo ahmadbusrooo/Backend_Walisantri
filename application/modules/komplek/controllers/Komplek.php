@@ -23,8 +23,8 @@ class Komplek extends  CI_Controller
 
     // Menampilkan daftar komplek
     public function index() {
-        $data['komplek'] = $this->Komplek_model->get_komplek();
         $data['title'] = 'Data Komplek';
+        $data['komplek'] = $this->Komplek_model->get_komplek_with_kamar_count();
         $this->load->library('pagination');
         $data['main'] = 'komplek/komplek_list';
         $this->load->view('manage/layout', $data);
@@ -169,21 +169,44 @@ public function edit_kamar($majors_id = NULL)
 
 public function delete_kamar($majors_id = NULL)
 {
-    if ($_POST) {
-        $kamar = $this->Student_model->get_majors(['id' => $majors_id]);
+    // Cek apakah user memiliki akses (contoh: hanya SUPERUSER yang boleh hapus)
+    if ($this->session->userdata('uroleid') != SUPERUSER) {
+        redirect('manage');
+    }
 
-        if (!$kamar) {
-            $this->session->set_flashdata('error', 'Kamar tidak ditemukan.');
-            redirect('komplek');
+    if ($_POST) {
+        // Ambil data santri yang masih terkait dengan kamar ini
+        $Santri = $this->Student_model->get(array('majors_id' => $majors_id));
+
+        // Jika masih ada santri yang terkait, tampilkan pesan error dan batalkan penghapusan
+        if (count($Santri) > 0) {
+            $this->session->set_flashdata('failed', 'Data Kamar tidak dapat dihapus karena masih memiliki santri.');
+            redirect('manage/majors');
         }
 
+        // Jika tidak ada santri, lanjutkan penghapusan
         $this->Student_model->delete_majors($majors_id);
-        $this->session->set_flashdata('success', 'Hapus Kamar Berhasil');
-        redirect('komplek/kamar/' . $kamar['komplek_id']);
-    } else {
+
+        // Catat ke dalam activity log
+        $this->load->model('logs/Logs_model');
+        $this->Logs_model->add(
+            array(
+                'log_date' => date('Y-m-d H:i:s'),
+                'user_id' => $this->session->userdata('uid'),
+                'log_module' => 'Kamar',
+                'log_action' => 'Hapus',
+                'log_info' => 'ID: ' . $majors_id . '; Nama: ' . $this->input->post('delName')
+            )
+        );
+
+        // Beri notifikasi sukses
+        $this->session->set_flashdata('success', 'Hapus Kamar berhasil');
+        redirect('manage/majors');
+    } elseif (!$_POST) {
         $this->session->set_flashdata('delete', 'Delete');
-        redirect('komplek/kamar/' . $majors_id);
+        redirect('manage/majors/edit/' . $majors_id);
     }
+
 }
 
 
