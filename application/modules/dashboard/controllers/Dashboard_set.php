@@ -70,9 +70,9 @@ class Dashboard_set extends CI_Controller {
 
     
 
-        // Ambil bulan & tahun dari input, jika tidak ada gunakan bulan & tahun sekarang
-        $month = $this->input->get('month') ?: date('m');
-        $year = $this->input->get('year') ?: date('Y');
+        $month = $this->input->get('month') ? (int) $this->input->get('month') : date('m');
+        $year = $this->input->get('year') ? (int) $this->input->get('year') : date('Y');
+        
         
         $data['selected_month'] = $month;
         $data['selected_year'] = $year;
@@ -80,10 +80,6 @@ class Dashboard_set extends CI_Controller {
         
         // Ambil data distribusi santri per komplek
 $data['students_by_komplek'] = $this->Student_model->get_students_by_komplek();
-
-// Ambil bulan & tahun dari input, jika tidak ada gunakan bulan & tahun sekarang
-$month = $this->input->get('month') ?: date('m');
-$year = $this->input->get('year') ?: date('Y');
 
 $data['selected_month'] = $month;
 $data['selected_year'] = $year;

@@ -505,61 +505,7 @@
       </div>
     </div>
 
-    <!-- Rekapitulasi Hafalan per Bulan dan Santri dengan Hafalan Terbanyak -->
-    <div class="row">
-      <div class="col-md-6">
-        <div class="box box-info">
-          <div class="box-header with-border">
-            <h3 class="box-title">Rekapitulasi Hafalan per Bulan</h3>
-          </div>
-          <div class="box-body">
-            <canvas id="monthlyHafalanChart"></canvas>
-          </div>
-        </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="box box-success">
-          <div class="box-header with-border">
-            <h3 class="box-title">Santri dengan Hafalan Terbanyak</h3>
-          </div>
-          <div class="box-body">
-            <ul class="list-group">
-              <?php foreach ($top_santri as $santri): ?>
-                <li class="list-group-item">
-                  <strong><?php echo $santri['student_full_name']; ?>:</strong>
-                  <?php echo $santri['total_hafalan']; ?> Nadzham
-                </li>
-              <?php endforeach; ?>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Persentase Santri Khatam vs Belum Khatam -->
-    <div class="row">
-      <div class="col-md-6">
-        <div class="box box-warning">
-          <div class="box-header with-border">
-            <h3 class="box-title">Persentase Santri Khatam</h3>
-          </div>
-          <div class="box-body">
-            <canvas id="khatamChart"></canvas>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="box box-info">
-          <div class="box-header with-border">
-            <h3 class="box-title">Distribusi Santri dan Ustadz</h3>
-          </div>
-          <div class="box-body">
-            <canvas id="santriChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </section>
 </div>

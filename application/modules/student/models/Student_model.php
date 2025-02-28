@@ -390,8 +390,8 @@ public function get_students_by_komplek() {
 
 public function get_santri_masuk_keluar($month, $year) {
     $this->db->select("
-        SUM(CASE WHEN student_input_date LIKE '$year-$month%' THEN 1 ELSE 0 END) AS total_masuk,
-        SUM(CASE WHEN student_status = 0 AND student_last_update LIKE '$year-$month%' THEN 1 ELSE 0 END) AS total_keluar
+        COUNT(CASE WHEN MONTH(student_input_date) = $month AND YEAR(student_input_date) = $year THEN 1 END) AS total_masuk,
+        COUNT(CASE WHEN student_status = 0 AND MONTH(student_last_update) = $month AND YEAR(student_last_update) = $year THEN 1 END) AS total_keluar
     ");
     return $this->db->get('student')->row_array();
 }
