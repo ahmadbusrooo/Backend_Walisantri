@@ -147,6 +147,9 @@ $data['santri_masuk_keluar'] = $this->Student_model->get_santri_masuk_keluar($mo
         $this->load->view('manage/layout', $data);
     }
 
+
+
+    
     public function get() {
         $events = $this->Holiday_model->get();
         foreach ($events as $i => $row) {
