@@ -102,7 +102,7 @@
       <?php } else { ?>
         <img src="<?php echo upload_url('school/' . $setting_logo['setting_value']) ?>" alt="Logo">
       <?php } ?>
-      <p><strong>SISTEM INFORMASI WALISANTRI</strong></p>
+      <p><strong>SISTEM INFORMASI</strong></p>
       <?php if (isset($setting_school) AND $setting_school['setting_value'] == '-') { ?>
         <p>Pondok Pesantren Al Ma'ruf</p>
       <?php } else { ?>
@@ -121,11 +121,49 @@
           <label for="email">Email</label>
           <input type="email" id="email" name="email" class="form-control" placeholder="Masukkan email" required autofocus>
         </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" class="form-control" placeholder="Masukkan password" required>
-          <i class="fa fa-eye toggle-password" onclick="togglePassword()"></i>
-        </div>
+        <style>
+/* Tambahkan CSS ini */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  z-index: 2;
+  background: white;
+  padding: 5px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.toggle-password:hover {
+  color: #206d25;
+  background: #f0f0f0;
+}
+
+#password {
+  padding-right: 45px !important;
+}
+</style>
+
+<!-- Perbaiki bagian password input -->
+<div class="form-group">
+  <label for="password">Password</label>
+  <div class="password-wrapper">
+    <input type="password" id="password" name="password" class="form-control" placeholder="Masukkan password" required>
+    <i class="fa fa-eye toggle-password" onclick="togglePassword()"></i>
+  </div>
+</div>
         <button type="submit" class="btn btn-login">Login</button>
       <?php echo form_close(); ?>
     </div>
