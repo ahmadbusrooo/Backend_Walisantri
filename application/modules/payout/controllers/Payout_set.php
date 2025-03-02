@@ -919,39 +919,6 @@ private function send_fcm_notification($student_id, $title, $message) {
 }
 
 
-
-// Fungsi untuk mengirim pesan WhatsApp
-private function send_whatsapp_notification($phone_number, $message) {
-  $api_url = "https://tegal.wablas.com/api/v2/send-message";
-  $api_token = "rVnPy4dJ7NUC6H8AAKQTlbkRLghq5TeyRnrvkosgozoJ8thLwsFqpMD.Q0MXgizJ";
-
-  $postData = [
-      "data" => [
-          [
-              'phone' => $phone_number,
-              'message' => $message
-          ]
-      ]
-  ];
-
-  $jsonData = json_encode($postData);
-  $ch = curl_init();
-  curl_setopt($ch, CURLOPT_URL, $api_url);
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  curl_setopt($ch, CURLOPT_POST, 1);
-  curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
-  curl_setopt($ch, CURLOPT_HTTPHEADER, [
-      "Authorization: $api_token",
-      "Content-Type: application/json"
-  ]);
-  curl_exec($ch);
-  curl_close($ch);
-}
-
-
-
-
-
 private function generatePaymentNumber($lastletter) {
   // Cek apakah ada data pada $lastletter
   if ($lastletter && isset($lastletter['letter_year']) && $lastletter['letter_year'] < date('Y')) {
