@@ -65,10 +65,13 @@ class Dashboard_set extends CI_Controller {
         $this->db->where('status', 'Khatam');
         $data['total_khatam'] = $this->db->count_all_results('nadzhaman');
         $data['total_belum_khatam'] = $data['total_santri'] - $data['total_khatam'];
-        $data['percent_khatam'] = ($data['total_khatam'] / $data['total_santri']) * 100;
-        $data['percent_belum_khatam'] = 100 - $data['percent_khatam'];
+if ($data['total_santri'] != 0) {
+    $data['percent_khatam'] = ($data['total_khatam'] / $data['total_santri']) * 100;
+} else {
+    $data['percent_khatam'] = 0; // Jika tidak ada santri, persentase khatam 0
+}
 
-    
+$data['percent_belum_khatam'] = 100 - $data['percent_khatam'];
 
         $month = $this->input->get('month') ? (int) $this->input->get('month') : date('m');
         $year = $this->input->get('year') ? (int) $this->input->get('year') : date('Y');
